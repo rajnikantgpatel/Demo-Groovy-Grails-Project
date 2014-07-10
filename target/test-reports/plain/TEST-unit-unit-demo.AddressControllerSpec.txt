@@ -1,0 +1,79 @@
+Testsuite: demo.AddressControllerSpec
+Tests run: 7, Failures: 3, Errors: 0, Time elapsed: 7.057 sec
+------------- Standard Output ---------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+------------- ---------------- ---------------
+
+Testcase: Test the index action returns the correct model took 4.604 sec
+Testcase: Test the create action returns the correct model took 0.332 sec
+Testcase: Test the save action correctly persists an instance took 0.82 sec
+	FAILED
+Condition not satisfied:
+
+response.redirectedUrl == '/address/show/1'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@330345ed
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/address/show/1'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@330345ed
+
+	at demo.AddressControllerSpec.Test the save action correctly persists an instance(AddressControllerSpec.groovy:55)
+
+Testcase: Test that the show action returns the correct model took 0.175 sec
+Testcase: Test that the edit action returns the correct model took 0.588 sec
+Testcase: Test the update action performs an update on a valid domain instance took 0.233 sec
+	FAILED
+Condition not satisfied:
+
+response.redirectedUrl == '/address/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@56f93e5b
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/address/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@56f93e5b
+
+	at demo.AddressControllerSpec.Test the update action performs an update on a valid domain instance(AddressControllerSpec.groovy:97)
+
+Testcase: Test that the delete action deletes an instance if it exists took 0.153 sec
+	FAILED
+Condition not satisfied:
+
+response.redirectedUrl == '/address/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@52a7478f
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == '/address/index'
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@52a7478f
+
+	at demo.AddressControllerSpec.Test that the delete action deletes an instance if it exists(AddressControllerSpec.groovy:127)
+

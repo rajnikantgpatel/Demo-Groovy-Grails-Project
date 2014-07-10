@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="3" hostname="SI-PC8" name="demo.AddressControllerSpec" tests="7" time="7.057" timestamp="2014-07-07T10:11:58">
+  <properties />
+  <testcase classname="demo.AddressControllerSpec" name="Test the index action returns the correct model" time="4.604" />
+  <testcase classname="demo.AddressControllerSpec" name="Test the create action returns the correct model" time="0.332" />
+  <testcase classname="demo.AddressControllerSpec" name="Test the save action correctly persists an instance" time="0.838">
+    <failure message="Condition not satisfied:&#xa;&#xa;response.redirectedUrl == &apos;/address/show/1&apos;&#xa;|        |             |&#xa;|        null          false&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@330345ed&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == &apos;/address/show/1&apos;
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@330345ed
+
+	at demo.AddressControllerSpec.Test the save action correctly persists an instance(AddressControllerSpec.groovy:55)
+</failure>
+  </testcase>
+  <testcase classname="demo.AddressControllerSpec" name="Test that the show action returns the correct model" time="0.175" />
+  <testcase classname="demo.AddressControllerSpec" name="Test that the edit action returns the correct model" time="0.588" />
+  <testcase classname="demo.AddressControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.248">
+    <failure message="Condition not satisfied:&#xa;&#xa;response.redirectedUrl == &apos;/address/index&apos;&#xa;|        |             |&#xa;|        null          false&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@56f93e5b&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == &apos;/address/index&apos;
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@56f93e5b
+
+	at demo.AddressControllerSpec.Test the update action performs an update on a valid domain instance(AddressControllerSpec.groovy:97)
+</failure>
+  </testcase>
+  <testcase classname="demo.AddressControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.168">
+    <failure message="Condition not satisfied:&#xa;&#xa;response.redirectedUrl == &apos;/address/index&apos;&#xa;|        |             |&#xa;|        null          false&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@52a7478f&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.redirectedUrl == &apos;/address/index&apos;
+|        |             |
+|        null          false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@52a7478f
+
+	at demo.AddressControllerSpec.Test that the delete action deletes an instance if it exists(AddressControllerSpec.groovy:127)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+  <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+</testsuite>
